@@ -27,37 +27,40 @@ public class GoodsInfo {
         pic = 0;
     }
 
-    // 声明一个手机商品的名称数组
+    // 声明一个商品的名称数组
     private static String[] mNameArray = {
-            "团子", "捞饭", "拌面", "拉面", "奶茶", "蛋黄酥","多肉","垫子"
+            "星巴克中杯", "星巴克大杯", "星巴克超大杯",
+            "星巴克中杯", "星巴克大杯", "星巴克超大杯",
+            "星巴克中杯", "星巴克大杯"
+
     };
-    // 声明一个手机商品的描述数组
+    // 声明一个商品的描述数组
     private static String[] mDescArray = {
-            "沈大成 双酿团",
-            "蟹黄风味捞饭",
-            "咸蛋黄拌面",
-            "拉面炒年糕",
-            "原味奶茶",
-            "轩妈蛋黄酥",
-            "优质多肉",
-            "加绒坐垫"
+            "星巴克中杯香草风味星冰乐",
+            "星巴克大杯抹茶星冰乐",
+            "星巴克超大杯摩卡星冰乐",
+            "星巴克中杯芒果西番莲果茶星冰乐",
+            "星巴克大杯冷萃冰咖啡",
+            "星巴克超大杯阿馥奇朵",
+            "星巴克中杯香甜奶油冷萃冰咖啡",
+            "星巴克大杯红茶拿铁"
     };
-    // 声明一个手机商品的价格数组
-    private static float[] mPriceArray = {6888, 3999, 2999, 2899, 2698, 2098};
-    // 声明一个手机商品的小图数组
+    // 声明一个商品的价格数组
+    private static float[] mPriceArray = {32, 35, 38, 32, 35, 38, 32, 35};
+    // 声明一个商品的小图数组
     private static int[] mThumbArray = {
-            R.drawable.tz_s, R.drawable.lf_s, R.drawable.bm_s,
-            R.drawable.lm_s, R.drawable.nc_s, R.drawable.dhs_s,
-            R.drawable.dr_s,R.drawable.pd_s
+            R.drawable.xiangcao_middle_s, R.drawable.mocha_large_s, R.drawable.moka_superlarge_s,
+            R.drawable.mangotea_middle_s, R.drawable.coldbrew_large_s, R.drawable.affogato_superlarge_s,
+            R.drawable.creamcold_middle_s,R.drawable.blacktealatte_large_s
     };
-    // 声明一个手机商品的大图数组
+    // 声明一个商品的大图数组
     private static int[] mPicArray = {
-            R.drawable.tz, R.drawable.lf, R.drawable.bm,
-            R.drawable.lm, R.drawable.nc, R.drawable.dhs,
-            R.drawable.dr,R.drawable.pd
+            R.drawable.xiangcao_middle, R.drawable.mocha_large, R.drawable.moka_superlarge,
+            R.drawable.mangotea_middle, R.drawable.coldbrew_large, R.drawable.affogato_superlarge,
+            R.drawable.creamcold_middle,R.drawable.blacktealatte_large
     };
 
-    // 获取默认的手机信息列表
+    // 获取默认的商品信息列表
     public static ArrayList<GoodsInfo> getDefaultList() {
         ArrayList<GoodsInfo> goodsList = new ArrayList<GoodsInfo>();
         for (int i = 0; i < mNameArray.length; i++) {

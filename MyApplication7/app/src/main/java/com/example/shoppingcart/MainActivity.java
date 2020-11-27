@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // 隐藏标题栏
-        getSupportActionBar().hide();
+
 
         TextView tv_title = findViewById(R.id.tv_title);
         tv_count = findViewById(R.id.tv_count);
         ll_channel = findViewById(R.id.ll_channel);
         findViewById(R.id.iv_cart).setOnClickListener(this);
-        tv_title.setText("手机商场");
+        tv_title.setText("胡雪晨的商城之罗永浩快乐杯专卖");
     }
 
     @Override
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     addToCart(info.rowid);
                     Toast.makeText(MainActivity.this,
-                            "已添加一部" + info.name + "到购物车", Toast.LENGTH_SHORT).show();
+                            "已添加一件" + info.name + "到购物车", Toast.LENGTH_SHORT).show();
                 }
             });
             ll_bottom.addView(btn_add);

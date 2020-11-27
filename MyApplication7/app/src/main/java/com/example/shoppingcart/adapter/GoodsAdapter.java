@@ -75,7 +75,7 @@ public class GoodsAdapter extends BaseAdapter implements AdapterView.OnItemClick
                 // 触发加入购物车监听器的添加动作
                 mAddCartListener.addToCart(info.rowid);
                 Toast.makeText(mContext,
-                        "已添加一部" + info.name + "到购物车", Toast.LENGTH_SHORT).show();
+                        "已添加" + info.name + "到购物车", Toast.LENGTH_SHORT).show();
             }
         });
         return convertView;
